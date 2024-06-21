@@ -8,4 +8,6 @@ async function ge(url) {
   }
 }
 
-ge("https://jsonplaceholder.typicode.com/posts/1");
+export default function add(x, y) {
+  return x + y;
+}
