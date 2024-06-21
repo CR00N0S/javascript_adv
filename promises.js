@@ -86,3 +86,15 @@ asy("https://jsonplaceholder.typicode.com/posts/1")
   .catch((error) => {
     console.error("Error fetching data:", error);
   });
+
+async function a_request(url) {
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    console.log(data.title);
+  } catch (err) {
+    console.log(err.masssage);
+  }
+}
+
+a_request("https://jsonplaceholder.typicode.com/posts/1");
