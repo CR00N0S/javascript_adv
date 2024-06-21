@@ -1,5 +1,5 @@
 import { asy } from "./promises.js"; //named
-import add from "./errorhandeling.js"; //defult
+import add from "./errorhandeling.js"; //default
 asy("https://jsonplaceholder.typicode.com/posts/1")
   .then((res1) => {
     console.log(res1.title);
